@@ -14,12 +14,12 @@ function App() {
   };
 
   return (
-    <div className="flex items-center justify-center h-screen bg-gray-100">
-      <div className="bg-white p-8 rounded shadow-md w-full max-w-sm">
-        <h2 className="text-2xl font-bold mb-6 text-center">Login</h2>
+    <div className="flex items-center justify-center h-screen bg-white">
+      <div className="bg-white p-8 rounded shadow-xl w-full max-w-sm">
+        <h2 className="text-2xl font-bold mb-6 text-center text-blue">Login</h2>
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
-            <label className="block text-gray-700">Email</label>
+            <label className="block text-gray">Email</label>
             <input
               type="email"
               className="w-full px-3 py-2 border rounded"
@@ -29,7 +29,7 @@ function App() {
             />
           </div>
           <div className="mb-4">
-            <label className="block text-gray-700">Password</label>
+            <label className="block text-gray">Password</label>
             <input
               type="password"
               className="w-full px-3 py-2 border rounded"
@@ -40,7 +40,7 @@ function App() {
           </div>
           <button
             type="submit"
-            className="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue"
+            className="w-full text-white py-2 rounded bg-gray hover:bg-blue hover:text-white"
           >
             Login
           </button>
